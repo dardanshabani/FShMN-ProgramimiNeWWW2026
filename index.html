@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="sq">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Programimi në WWW — Zgjidhjet e ushtrimeve</title>
+    <style>
+      * { box-sizing: border-box; }
+      body { margin: 0; background: #f3f6fb; color: #17263c; font: 1rem/1.6 system-ui, sans-serif; }
+      main { max-width: 850px; margin: auto; padding: 3rem 1.25rem; }
+      h1, h2 { line-height: 1.2; }
+      .intro { color: #485870; }
+      .weeks { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 1.25rem; margin-block: 2rem; }
+      article { background: white; border: 1px solid #ccd6e3; border-radius: .75rem; padding: 1.5rem; }
+      a { color: #075b9b; }
+      .open { display: inline-block; background: #126d64; color: white; border-radius: .4rem; padding: .65rem 1rem; text-decoration: none; }
+      a:focus-visible { outline: 3px solid #a74200; outline-offset: 4px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p>FShMN · 2026</p>
+      <h1>Programimi në WWW</h1>
+      <p class="intro">Zgjidhjet e ushtrimeve publikohen gradualisht, javë pas jave.</p>
+      <div class="weeks">
+        <article>
+          <h2>Java I</h2>
+          <p>Pasaporta digjitale — struktura HTML dhe lidhjet mes faqeve.</p>
+          <a class="open" href="./JavaI/">Hap zgjidhjen e Javës I</a>
+        </article>
+        <article>
+          <h2>Java II</h2>
+          <p>Muzeu i sendeve — HTML semantik, figura dhe lundrim.</p>
+          <a class="open" href="./JavaII/">Hap zgjidhjen e Javës II</a>
+        </article>
+      </div>
+      <p><a href="https://github.com/dardanshabani/FShMN-ProgramimiNeWWW2026">Shiko kodin në GitHub</a></p>
+    </main>
+  </body>
+</html>
