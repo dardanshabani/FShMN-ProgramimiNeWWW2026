@@ -1,0 +1,153 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #17263c;
+  background: #f3f6fb;
+  line-height: 1.6;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+header,
+main,
+footer {
+  max-width: 1080px;
+  margin: auto;
+  padding: 1.5rem;
+}
+header {
+  border-bottom: 3px solid #126d64;
+}
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+a {
+  color: #075b9b;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+button,
+.button {
+  background: #126d64;
+  color: white;
+  border: 0;
+  border-radius: 0.4rem;
+  padding: 0.65rem 1rem;
+  cursor: pointer;
+}
+button:disabled {
+  background: #586678;
+  cursor: not-allowed;
+}
+input,
+select,
+textarea {
+  padding: 0.55rem;
+  border: 1px solid #68778d;
+  border-radius: 0.3rem;
+  max-width: 100%;
+}
+label {
+  display: block;
+  margin-top: 0.8rem;
+}
+fieldset {
+  border: 1px solid #a2afc0;
+  margin: 1rem 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+nav,
+.controls {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 1rem;
+}
+.card,
+section.panel {
+  background: white;
+  border: 1px solid #ccd6e3;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  margin-block: 1rem;
+}
+.card button {
+  margin: 0.4rem;
+}
+.muted {
+  color: #485870;
+}
+.error {
+  color: #a01818;
+}
+.success {
+  color: #086345;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  padding: 0.6rem;
+  text-align: left;
+  border: 1px solid #aab7c7;
+}
+.table-wrap {
+  overflow-x: auto;
+}
+:focus-visible {
+  outline: 3px solid #a74200;
+  outline-offset: 3px;
+}
+.skip {
+  position: absolute;
+  left: -9999px;
+}
+.skip:focus {
+  left: 1rem;
+  top: 1rem;
+  background: white;
+  padding: 0.5rem;
+}
+pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  background: #17263c;
+  color: #f4f7fa;
+  padding: 1rem;
+}
+output {
+  display: block;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+[hidden] {
+  display: none !important;
+}
+@media (max-width: 480px) {
+  header,
+  main,
+  footer {
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+}
